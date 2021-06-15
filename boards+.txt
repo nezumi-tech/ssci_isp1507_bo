@@ -1,0 +1,42 @@
+# ----------------------------------
+# Switch Science ISP1507 Breakout
+# ----------------------------------
+ssci_isp1507_bo.name=Switch Science ISP1507 Breakout
+ssci_isp1507_bo.bootloader.tool=bootburn
+
+# Upload
+ssci_isp1507_bo.upload.tool=nrfutil
+ssci_isp1507_bo.upload.protocol=nrfutil
+ssci_isp1507_bo.upload.use_1200bps_touch=false
+ssci_isp1507_bo.upload.wait_for_upload_port=false
+ssci_isp1507_bo.upload.native_usb=false
+ssci_isp1507_bo.upload.maximum_size=290816
+ssci_isp1507_bo.upload.maximum_data_size=52224
+
+# Build
+ssci_isp1507_bo.build.mcu=cortex-m4
+ssci_isp1507_bo.build.f_cpu=64000000
+ssci_isp1507_bo.build.board=NRF52832_FEATHER
+ssci_isp1507_bo.build.core=nRF5
+ssci_isp1507_bo.build.variant=ssci_isp1507_bo
+ssci_isp1507_bo.build.usb_manufacturer="Adafruit LLC"
+ssci_isp1507_bo.build.usb_product="Feather nRF52832"
+ssci_isp1507_bo.build.extra_flags=-DNRF52832_XXAA -DNRF52
+ssci_isp1507_bo.build.ldscript=nrf52832_s132_v6.ld
+
+# SofDevice Menu
+ssci_isp1507_bo.menu.softdevice.s132v6=0.5.0 SoftDevice s132 6.1.1
+ssci_isp1507_bo.menu.softdevice.s132v6.build.sd_name=s132
+ssci_isp1507_bo.menu.softdevice.s132v6.build.sd_version=6.1.1
+ssci_isp1507_bo.menu.softdevice.s132v6.build.sd_fwid=0x00B7
+
+# Debug Menu
+ssci_isp1507_bo.menu.debug.l0=Level 0 (Release)
+ssci_isp1507_bo.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+ssci_isp1507_bo.menu.debug.l1=Level 1 (Error Message)
+ssci_isp1507_bo.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+ssci_isp1507_bo.menu.debug.l2=Level 2 (Full Debug)
+ssci_isp1507_bo.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+ssci_isp1507_bo.menu.debug.l3=Level 3 (Segger SystemView)
+ssci_isp1507_bo.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+ssci_isp1507_bo.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
