@@ -9,5 +9,5 @@ https://github.com/adafruit/Adafruit_nRF52_Arduino
 
 # How to use
 * boards+.txtの内容をboards.txtに追加する。
-* /variants/ssci_isp1507_bo 内にvariant.cpp, variant.h を追加する。
+* /variants 内に/ssci_isp1507_bo をフォルダごと追加する。
 
