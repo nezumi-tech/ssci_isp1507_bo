@@ -30,10 +30,10 @@ const uint32_t g_ADigitalPinMap[] = {
   1,  // xtal 2
   2,  // a0	SCK
   3,  // a1	MISO
-  4,  // a2	MOSI
+  4,  // a2	SDA
   5,  // a3	SCL
   6,  //	TXD 
-  7,  //	SDA
+  7,  //	MOSI
 
   // D8 - D13
   8,  //	RXD 
@@ -63,9 +63,9 @@ const uint32_t g_ADigitalPinMap[] = {
   25, // *
   26, // *
   27, // *GPIO #27
-  28, // A4	SPI_SS
+  28, // A4	
   29, // A5
-  30, // A6
+  30, // A6	SPI_SS
   31, // *A7
 };
 
