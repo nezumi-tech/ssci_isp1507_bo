@@ -28,15 +28,15 @@ const uint32_t g_ADigitalPinMap[] = {
   // D0 - D7
   0,  // xtal 1
   1,  // xtal 2
-  2,  // a0	TXD
-  3,  // a1	RXD
-  4,  // a2	SCK
-  5,  // a3	MOSI
-  6,  //	MISO
+  2,  // a0	SCK
+  3,  // a1	MISO
+  4,  // a2	MOSI
+  5,  // a3	SCL
+  6,  //	TXD 
   7,  //	SDA
 
   // D8 - D13
-  8,  //	SCL
+  8,  //	RXD 
 
   9,  // *NFC1
   10, // *NFC2

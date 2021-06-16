@@ -87,17 +87,17 @@ static const uint8_t AREF = PIN_AREF;
 /*
  * Serial interfaces
  */
-#define PIN_SERIAL_RX       (2)		//mod
-#define PIN_SERIAL_TX       (3)		//mod
+#define PIN_SERIAL_RX       (8)		//
+#define PIN_SERIAL_TX       (6)		//
 
 /*
  * SPI Interfaces
  */
 #define SPI_INTERFACES_COUNT 1
 
-#define PIN_SPI_MISO         (6)	//mod
-#define PIN_SPI_MOSI         (5)	//mod
-#define PIN_SPI_SCK          (4)	//mod
+#define PIN_SPI_MISO         (3)	//mod
+#define PIN_SPI_MOSI         (4)	//mod
+#define PIN_SPI_SCK          (2)	//mod
 
 static const uint8_t SS   = 28 ;
 static const uint8_t MOSI = PIN_SPI_MOSI ;
@@ -109,8 +109,8 @@ static const uint8_t SCK  = PIN_SPI_SCK ;
  */
 #define WIRE_INTERFACES_COUNT 1
 
-#define PIN_WIRE_SDA         (7u)	//mod
-#define PIN_WIRE_SCL         (8u)	//mod
+#define PIN_WIRE_SDA         (7)	//mod
+#define PIN_WIRE_SCL         (5)	//mod
 
 #ifdef __cplusplus
 }
