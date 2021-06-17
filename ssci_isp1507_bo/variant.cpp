@@ -32,11 +32,11 @@ const uint32_t g_ADigitalPinMap[] = {
   3,  // a1	MISO
   4,  // a2	SDA
   5,  // a3	SCL
-  6,  //	TXD 
+  6,  //	TXD (Do not change)
   7,  //	MOSI
 
   // D8 - D13
-  8,  //	RXD 
+  8,  //	RXD (Do not change)
 
   9,  // *NFC1
   10, // *NFC2
@@ -53,7 +53,7 @@ const uint32_t g_ADigitalPinMap[] = {
   // function set pins
   17, // *
   18, // *SWO
-  19, // *LED #2 (blue)
+  19, // *LED #2 (blue)(not connected)
   20, // *DFU
   21, // Reset
   22, // *Factory Reset
@@ -74,8 +74,5 @@ void initVariant()
   // LED1 & LED2
   pinMode(PIN_LED1, OUTPUT);
   ledOff(PIN_LED1);
-
-  pinMode(PIN_LED2, OUTPUT);
-  ledOff(PIN_LED2);
 }
 
