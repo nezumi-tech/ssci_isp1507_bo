@@ -25,7 +25,7 @@ ssci_isp1507_bo.build.extra_flags=-DNRF52832_XXAA -DNRF52
 ssci_isp1507_bo.build.ldscript=nrf52832_s132_v6.ld
 
 # SofDevice Menu
-ssci_isp1507_bo.menu.softdevice.s132v6=0.5.0 SoftDevice s132 6.1.1
+ssci_isp1507_bo.menu.softdevice.s132v6=S132 6.1.1
 ssci_isp1507_bo.menu.softdevice.s132v6.build.sd_name=s132
 ssci_isp1507_bo.menu.softdevice.s132v6.build.sd_version=6.1.1
 ssci_isp1507_bo.menu.softdevice.s132v6.build.sd_fwid=0x00B7
