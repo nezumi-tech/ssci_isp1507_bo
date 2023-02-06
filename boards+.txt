@@ -21,12 +21,12 @@ ssci_isp1507_bo.build.f_cpu=64000000
 ssci_isp1507_bo.build.board=NRF52832_FEATHER
 ssci_isp1507_bo.build.core=nRF5
 ssci_isp1507_bo.build.variant=ssci_isp1507_bo
-ssci_isp1507_bo.build.usb_manufacturer="Adafruit LLC"
+ssci_isp1507_bo.build.usb_manufacturer="Adafruit"
 ssci_isp1507_bo.build.usb_product="Feather nRF52832"
 ssci_isp1507_bo.build.extra_flags=-DNRF52832_XXAA -DNRF52
 ssci_isp1507_bo.build.ldscript=nrf52832_s132_v6.ld
 
-# SofDevice Menu
+# SoftDevice Menu
 ssci_isp1507_bo.menu.softdevice.s132v6=S132 6.1.1
 ssci_isp1507_bo.menu.softdevice.s132v6.build.sd_name=s132
 ssci_isp1507_bo.menu.softdevice.s132v6.build.sd_version=6.1.1
