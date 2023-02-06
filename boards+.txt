@@ -1,10 +1,12 @@
-# ----------------------------------
+# -----------------------------------
 # Switch Science ISP1507 Breakout
-# ----------------------------------
+# -----------------------------------
 ssci_isp1507_bo.name=Switch Science ISP1507 Breakout
-ssci_isp1507_bo.bootloader.tool=bootburn
+
+# VID/PID for Bootloader, Arduino & CircuitPython
 
 # Upload
+ssci_isp1507_bo.bootloader.tool=bootburn
 ssci_isp1507_bo.upload.tool=nrfutil
 ssci_isp1507_bo.upload.protocol=nrfutil
 ssci_isp1507_bo.upload.use_1200bps_touch=false
@@ -40,3 +42,11 @@ ssci_isp1507_bo.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
 ssci_isp1507_bo.menu.debug.l3=Level 3 (Segger SystemView)
 ssci_isp1507_bo.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
 ssci_isp1507_bo.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+
+# Debug Output Menu
+ssci_isp1507_bo.menu.debug_output.serial=Serial
+ssci_isp1507_bo.menu.debug_output.serial.build.logger_flags=-DCFG_LOGGER=0
+ssci_isp1507_bo.menu.debug_output.serial1=Serial1
+ssci_isp1507_bo.menu.debug_output.serial1.build.logger_flags=-DCFG_LOGGER=1 -DCFG_TUSB_DEBUG=CFG_DEBUG
+ssci_isp1507_bo.menu.debug_output.rtt=Segger RTT
+ssci_isp1507_bo.menu.debug_output.rtt.build.logger_flags=-DCFG_LOGGER=2 -DCFG_TUSB_DEBUG=CFG_DEBUG -DSEGGER_RTT_MODE_DEFAULT=SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL
