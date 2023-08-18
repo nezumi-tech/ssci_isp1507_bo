@@ -1,0 +1,2 @@
+name=Switch Science ISP1507 Breakout nezumi_tech mod
+version=1.5.0
