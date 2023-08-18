@@ -1,0 +1,44 @@
+{
+  "packages": [
+    {
+      "name": "nezumi_tech",
+      "maintainer": "nezumi_tech",
+      "websiteURL": "https://github.com/nezumi-tech/ssci_isp1507_bo",
+      "email": "",
+      "help": {
+        "online": "https://github.com/nezumi-tech/ssci_isp1507_bo"
+      },
+      "platforms": [
+        {
+          "name": "Switch Science ISP1507 Breakout nezumi_tech mod",
+          "architecture": "nrf52",
+          "version": "0.1.5",
+          "category": "Contributed",
+          "help": {
+            "online": "https://github.com/nezumi-tech/ssci_isp1507_bo"
+          },
+          "url": "https://raw.githubusercontent.com/nezumi-tech/ssci_isp1507_bo/Board_Packaging_test/packages/ISP1507_Breakout_nezumi_tech_mod-0.1.5.zip",
+          "archiveFileName": "ISP1507_Breakout_nezumi_tech_mod-0.1.5.zip",
+          "boards": [
+            {
+              "name": "ISP1507 Breakout"
+            }
+          ],
+          "toolsDependencies": [
+            {
+              "packager": "adafruit",
+              "name": "arm-none-eabi-gcc",
+              "version": "9-2019q4"
+            },
+            {
+              "packager": "adafruit",
+              "name": "nrfjprog",
+              "version": "9.4.0"
+            }
+          ]
+        }
+      ],
+      "tools": []
+    }
+  ]
+}
