@@ -1,53 +1,46 @@
-# -----------------------------------
-# Switch Science ISP1507 Breakout
-# -----------------------------------
-ssci_isp1507_bo.name=Switch Science ISP1507 Breakout
+menu.softdevice=Bootloader
+menu.debug=Debug
 
-# VID/PID for Bootloader, Arduino & CircuitPython
+# ----------------------------------
+# Switch Science ISP1507 Breakout
+# ----------------------------------
+isp1507breakout.name=Switch Science ISP1507 Breakout nezumi_tech mod
+isp1507breakout.bootloader.tool=adafruit:bootburn
 
 # Upload
-ssci_isp1507_bo.bootloader.tool=adafruit:bootburn
-ssci_isp1507_bo.upload.tool=adafruit:nrfutil
-ssci_isp1507_bo.upload.protocol=nrfutil
-ssci_isp1507_bo.upload.use_1200bps_touch=false
-ssci_isp1507_bo.upload.wait_for_upload_port=false
-ssci_isp1507_bo.upload.native_usb=false
-ssci_isp1507_bo.upload.maximum_size=290816
-ssci_isp1507_bo.upload.maximum_data_size=52224
+isp1507breakout.upload.tool=adafruit:nrfutil
+isp1507breakout.upload.protocol=nrfutil
+isp1507breakout.upload.use_1200bps_touch=false
+isp1507breakout.upload.wait_for_upload_port=false
+isp1507breakout.upload.native_usb=false
+isp1507breakout.upload.maximum_size=290816
+isp1507breakout.upload.maximum_data_size=52224
 
 # Build
-ssci_isp1507_bo.build.mcu=cortex-m4
-ssci_isp1507_bo.build.f_cpu=64000000
-ssci_isp1507_bo.build.board=NRF52832_FEATHER
-ssci_isp1507_bo.build.core=adafruit:nRF5
-ssci_isp1507_bo.build.variant=ssci_isp1507_bo
-ssci_isp1507_bo.build.usb_manufacturer="Switch Science, Inc."
-ssci_isp1507_bo.build.usb_product="SSCI ISP1507 Breakout"
-ssci_isp1507_bo.build.extra_flags=-DNRF52832_XXAA -DNRF52
-ssci_isp1507_bo.build.ldscript=nrf52832_s132_v6.ld
-ssci_isp1507_bo.build.openocdscript=scripts/openocd/daplink_nrf52.cfg
+isp1507breakout.build.mcu=cortex-m4
+isp1507breakout.build.f_cpu=64000000
+isp1507breakout.build.board=ISP1507_BREAKOUT
+isp1507breakout.build.core=adafruit:nRF5
+isp1507breakout.build.variant=ssci_isp1507_bo
+isp1507breakout.build.usb_manufacturer="Switch Science, Inc."
+isp1507breakout.build.usb_product="SSCI ISP1507 Breakout"
+isp1507breakout.build.extra_flags=-DNRF52832_XXAA -DNRF52
+isp1507breakout.build.ldscript=nrf52832_s132_v6.ld
 
-# Menu: SoftDevice
-ssci_isp1507_bo.menu.softdevice.s132v6=S132 6.1.1
-ssci_isp1507_bo.menu.softdevice.s132v6.build.sd_name=s132
-ssci_isp1507_bo.menu.softdevice.s132v6.build.sd_version=6.1.1
-ssci_isp1507_bo.menu.softdevice.s132v6.build.sd_fwid=0x00B7
+# SofDevice Menu
+isp1507breakout.menu.softdevice.s132v6=S132 6.1.1
+isp1507breakout.menu.softdevice.s132v6.build.sd_name=s132
+isp1507breakout.menu.softdevice.s132v6.build.sd_version=6.1.1
+isp1507breakout.menu.softdevice.s132v6.build.sd_fwid=0x00B7
 
-# Menu: Debug Level
-ssci_isp1507_bo.menu.debug.l0=Level 0 (Release)
-ssci_isp1507_bo.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
-ssci_isp1507_bo.menu.debug.l1=Level 1 (Error Message)
-ssci_isp1507_bo.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
-ssci_isp1507_bo.menu.debug.l2=Level 2 (Full Debug)
-ssci_isp1507_bo.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
-ssci_isp1507_bo.menu.debug.l3=Level 3 (Segger SystemView)
-ssci_isp1507_bo.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
-ssci_isp1507_bo.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
+# Debug Menu
+isp1507breakout.menu.debug.l0=Level 0 (Release)
+isp1507breakout.menu.debug.l0.build.debug_flags=-DCFG_DEBUG=0
+isp1507breakout.menu.debug.l1=Level 1 (Error Message)
+isp1507breakout.menu.debug.l1.build.debug_flags=-DCFG_DEBUG=1
+isp1507breakout.menu.debug.l2=Level 2 (Full Debug)
+isp1507breakout.menu.debug.l2.build.debug_flags=-DCFG_DEBUG=2
+isp1507breakout.menu.debug.l3=Level 3 (Segger SystemView)
+isp1507breakout.menu.debug.l3.build.debug_flags=-DCFG_DEBUG=3
+isp1507breakout.menu.debug.l3.build.sysview_flags=-DCFG_SYSVIEW=1
 
-# Menu: Debug Port
-ssci_isp1507_bo.menu.debug_output.serial=Serial
-ssci_isp1507_bo.menu.debug_output.serial.build.logger_flags=-DCFG_LOGGER=0
-ssci_isp1507_bo.menu.debug_output.serial1=Serial1
-ssci_isp1507_bo.menu.debug_output.serial1.build.logger_flags=-DCFG_LOGGER=1 -DCFG_TUSB_DEBUG=CFG_DEBUG
-ssci_isp1507_bo.menu.debug_output.rtt=Segger RTT
-ssci_isp1507_bo.menu.debug_output.rtt.build.logger_flags=-DCFG_LOGGER=2 -DCFG_TUSB_DEBUG=CFG_DEBUG -DSEGGER_RTT_MODE_DEFAULT=SEGGER_RTT_MODE_BLOCK_IF_FIFO_FULL
