@@ -14,7 +14,7 @@ https://raw.githubusercontent.com/nezumi-tech/ssci_isp1507_bo/main/package_nezum
 ```
 `nRF52 Boards`は`Adafruit`のサポートファイルを参照する為、下記URLも`追加のボードマネージャURL`に追記してください。
 ```
-https://www.adafruit.com/package_adafruit_index.json
+https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
 ```
 
 ## EN
@@ -24,7 +24,7 @@ https://www.adafruit.com/package_adafruit_index.json
  4. Add
     ```
     https://raw.githubusercontent.com/nezumi-tech/ssci_isp1507_bo/main/package_nezumi_tech_ISP1507.json
-    https://www.adafruit.com/package_adafruit_index.json
+    https://adafruit.github.io/arduino-board-index/package_adafruit_index.json
     ```
     as an 'Additional Board Manager URL'
  6. Restart the Arduino IDE
